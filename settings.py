@@ -75,6 +75,10 @@ productos = {
             'type': 'integer',
             'required' : True
         },
+        'descripcion':{
+            'type': 'string',
+            'required' : True
+        }
     }
 }
 

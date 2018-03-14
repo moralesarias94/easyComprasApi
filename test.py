@@ -1,7 +1,7 @@
 
 import unittest
-import requests
 import json
+import requests
 
 class TestRemoteItems(unittest.TestCase):
     def testGetLatestItems(self):
