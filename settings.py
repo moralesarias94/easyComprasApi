@@ -55,25 +55,27 @@ productos = {
             'type': 'string',
             'required': True,
         },
-        'precio_exito': {
-            'type': 'float',
-            'required': True,
+        'proveedores': {
+            'type': 'list',
+            'schema': {
+                'type': 'string'
+            }
         },
-        'precio_carulla': {
-            'type': 'float',
-            'required': True,
+        'precios': {
+            'type': 'list',
+            'schema': {
+                'type': 'float'
+            }
         },
         'direccion_img': {
             'type': 'string',
             'required': True,
         },
-        'disponibilidad_exito':{
-            'type': 'integer',
-            'required' : True
-        },
-        'disponibilidad_carulla':{
-            'type': 'integer',
-            'required' : True
+        'disponibilidades': {
+            'type': 'list',
+            'schema': {
+                'type': 'integer'
+            }
         },
         'descripcion':{
             'type': 'string',
