@@ -55,7 +55,11 @@ productos = {
             'type': 'string',
             'required': True,
         },
-        'precio': {
+        'precio_exito': {
+            'type': 'float',
+            'required': True,
+        },
+        'precio_carulla': {
             'type': 'float',
             'required': True,
         },
