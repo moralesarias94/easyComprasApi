@@ -14,7 +14,7 @@ MONGO_PORT = 13169
 MONGO_USERNAME = 'moralesarias94'
 MONGO_PASSWORD = 'juaz1212'
 MONGO_DBNAME = 'easycompras'
-DEBUG = bool(int(os.environ.get('DEBUG', 1)))
+#DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 
 # Enable reads (GET), inserts (POST) and DELETE for resources/collections
@@ -55,10 +55,6 @@ productos = {
             'type': 'string',
             'required': True,
         },
-        'proveedor': {
-            'type': 'string',
-            'required': True,
-        },
         'precio': {
             'type': 'float',
             'required': True,
@@ -66,7 +62,15 @@ productos = {
         'direccion_img': {
             'type': 'string',
             'required': True,
-        }
+        },
+        'disponibilidad_exito':{
+            'type': 'integer',
+            'required' : True
+        },
+        'disponibilidad_carulla':{
+            'type': 'integer',
+            'required' : True
+        },
     }
 }
 
