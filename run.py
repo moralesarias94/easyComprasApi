@@ -5,6 +5,7 @@
 """
 
 import os
+import jinja2
 from eve import Eve
 
 # Heroku support: bind to PORT if defined, otherwise default to 5000.
@@ -17,8 +18,8 @@ else:
     port = 5000
     host = '127.0.0.1'
 
-app = Eve()
 
+app = Eve()
 
 if __name__ == '__main__':
     app.run(host=host, port=port)

@@ -14,6 +14,7 @@ MONGO_PORT = 13169
 MONGO_USERNAME = 'moralesarias94'
 MONGO_PASSWORD = 'juaz1212'
 MONGO_DBNAME = 'easycompras'
+MONGO_QUERY_BLACKLIST = ['$where']
 #DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 
