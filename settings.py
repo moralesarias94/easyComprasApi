@@ -60,7 +60,8 @@ productos = {
             'type': 'list',
             'schema': {
                 'type': 'string'
-            }
+            },
+            'required' : True
         },
         'precios': {
             'type': 'list',
@@ -76,7 +77,8 @@ productos = {
             'type': 'list',
             'schema': {
                 'type': 'integer'
-            }
+            },
+            'required' : True
         },
         'descripcion':{
             'type': 'string',
